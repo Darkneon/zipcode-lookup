@@ -10,10 +10,10 @@ COPY ./client ./client
 COPY ./server ./server
 
 WORKDIR /opt/app/server
-RUN npm install --omit=dev
+RUN npm install
 
 WORKDIR /opt/app/client
-RUN npm install  --omit=dev
+RUN npm install
 
 EXPOSE 4000
 EXPOSE 3000
