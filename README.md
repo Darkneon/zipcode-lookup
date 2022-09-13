@@ -31,5 +31,6 @@ https://user-images.githubusercontent.com/654727/189903640-257ab8e7-b277-4ea7-be
 
 https://user-images.githubusercontent.com/654727/189903662-3e0431a6-92ee-4d8d-89e3-4aac633d683b.mp4
 
+# Further improvements
 
-
+The caching on the server side can be greatly improved. Since the fields in the queries are static and the number of variables is only two, the whole HTTP request could be cached by hashing the variables and the query name in the url.
