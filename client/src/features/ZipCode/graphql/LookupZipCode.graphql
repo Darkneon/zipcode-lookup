@@ -1,0 +1,13 @@
+query LookupZipCode($countryCode: String!, $zipCode: String!) {
+    getZipCodeDetails(countryCode: $countryCode, zipcode: $zipCode) {
+        code,
+        location {
+            country {
+                code,
+                name
+            }
+            city,
+            state
+        }
+    }
+}

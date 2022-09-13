@@ -1,0 +1,19 @@
+type Country {
+    code: String!
+    name: String!
+}
+
+type Location {
+    country: Country!
+    city: String
+    state: String
+}
+
+type ZipCode {
+    code: String!
+    location: Location
+}
+
+extend type Query {
+    getZipCodeDetails(countryCode: String!, zipcode: String!): ZipCode
+}

@@ -1,0 +1,24 @@
+type Query {
+  _empty: String
+  getZipCodeDetails(countryCode: String!, zipcode: String!): ZipCode
+}
+
+type Country {
+  code: String!
+  name: String!
+}
+
+type Location {
+  country: Country!
+  city: String
+  state: String
+}
+
+type ZipCode {
+  code: String!
+  location: Location
+}
+
+schema {
+  query: Query
+}

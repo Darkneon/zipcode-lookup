@@ -1,0 +1,12 @@
+.yarn
+.parcel-cache
+node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+dist
+.yarnrc.yml
+.pnp.*
+.idea/
+.DS_Store
+.storybook
